@@ -1,0 +1,19 @@
+<style type="text/css">
+  body {
+    margin: 20px;
+  }
+
+  h2 {
+    color: #F90;
+    font-weight: 700;
+    font-size: 72px;
+  }
+</style>
+
+<body>
+  <% if (!!user) { %>
+    <h2><%= user.name %></h2>
+    <% } else { %>
+      No user found
+      <% } %>
+</body>

@@ -1,0 +1,30 @@
+{
+  "name": "@appstructio/node-pdf-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen-key": "DEBUG=api:scripts node scripts/generate-app-key.js",
+    "start": "REDIS_URL=redis://127.0.0.1:6379 nodemon bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.3.3",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.1.0",
+    "inquirer": "^1.2.3",
+    "moment": "^2.17.0",
+    "redis": "^2.6.3",
+    "uuid": "^3.0.1"
+  }
+}

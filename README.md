@@ -1,4 +1,4 @@
-# hubspot-pdf-creator
+# node-pdf-creator
 
 ## Pre-requisites
 

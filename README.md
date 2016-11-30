@@ -60,16 +60,12 @@ Authorization: Bearer <APPLICATION_KEY>
 
 To ensure that only signed applications can post to this endpoint, you need to generate an application key and save it to the application. Here's the process
 
-* Run `npm run gen-key`
+* Run `npm run gen-key` in the project directory
 * Enter your application name (used to identify which app is making the request)
 * Make note of the generated application key
-* This updates `lib/app-keys.json`, so you need to commit this file back to the repo and deploy to Heroku.
+* This updates `lib/app-keys.json`, so you need to commit this file back to the repo and deploy to your server (eg Heroku).
 
 
 ## Downloading at a later stage
 
 * The download will be retained in memory for `n` days (configurable as a `redis` TTL value)
-
-## Future
-
-* Move to a Heroku application

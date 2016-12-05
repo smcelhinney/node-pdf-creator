@@ -1,19 +1,63 @@
+<link href="https://fonts.googleapis.com/css?family=Bungee|Yrsa"
+  rel="stylesheet">
 <style type="text/css">
   body {
-    margin: 20px;
+    font-family: 'Yrsa', cursive;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   h2 {
+    font-family: 'Bungee', cursive;
     color: #F90;
     font-weight: 700;
     font-size: 72px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+  }
+
+  p {
+    font-size: 1.2rem
+  }
+
+  div.row {
+    width: 100%;
+    display: flex;
+  }
+
+  div.row p {
+    flex: 1; margin-right: 20px
+  }
+
+  div.row img {
+
   }
 </style>
 
 <body>
-  <% if (!!user) { %>
-    <h2><%= user.name %></h2>
-    <% } else { %>
-      No user found
-      <% } %>
+  <section>
+    <h2>Hello there, <%= user.name %> </h2>
+    <div class="row">
+      <p>Nisi est laboris officia sunt pariatur reprehenderit ullamco dolor. Sint velit elit et ea consequat irure occaecat cupidatat sint reprehenderit. Aliqua enim irure culpa ad occaecat sunt duis duis anim eu aute. Cillum fugiat sunt reprehenderit consectetur
+        Lorem incididunt eu in. Officia proident adipisicing reprehenderit pariatur laborum anim ex. Irure Lorem officia amet laborum ad cupidatat elit ex enim officia tempor voluptate qui voluptate culpa do irure. Ipsum irure deserunt ea tempor sint
+        proident ipsum cupidatat aute. </p>
+      <img height="400"
+        src="https://s-media-cache-ak0.pinimg.com/originals/ab/67/4a/ab674a620bba8b4ab0ac6d10501f8c36.jpg"
+        class="inline" />
+    </div>
+    <div class="row">
+      <p>Eu labore aliquip id aliquip consectetur quis veniam aute aliquip elit cillum. In culpa cillum quis commodo ut ea excepteur quis irure Lorem sint aliquip adipisicing. Consectetur irure adipisicing non culpa ea laboris culpa reprehenderit occaecat
+        elit. Pariatur nulla reprehenderit sunt in magna cillum eu do anim duis est id velit ex. Fugiat reprehenderit esse consequat culpa do velit quis officia proident elit excepteur amet qui commodo. Mollit magna occaecat Lorem sint adipisicing minim
+        id reprehenderit. Consequat non deserunt magna est eu cillum consequat tempor Lorem nostrud.</p>
+    </div>
+    <div id="pageFooter">A page footer
+      <%= new Date() %>
+    </div>
+  </section>
+
 </body>

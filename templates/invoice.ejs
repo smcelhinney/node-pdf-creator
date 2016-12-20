@@ -1,21 +1,29 @@
-
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>DocRaptor Invoice For Super Best Client</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <script src="https://use.typekit.com/gxo7nof.js" type="text/javascript"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <meta http-equiv="content-type"
+      content="text/html; charset=utf-8" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <script src="https://use.typekit.com/gxo7nof.js"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      } catch (e) {}
+    </script>
     <style type="text/css">
       /* setup the page */
+
       @page {
         size: US-Letter;
         margin: 0 0 35mm 0;
         background: #ffffff;
       }
-
       /* setup the footer */
+
       @page {
         @bottom {
           content: flow(footer);
@@ -35,7 +43,8 @@
         margin: 0 auto;
       }
 
-      header, #main {
+      header,
+      #main {
         margin: 15mm;
       }
 
@@ -45,7 +54,8 @@
         padding-bottom: 5mm;
       }
 
-      .seller, .status{
+      .seller,
+      .status {
         float: left;
       }
 
@@ -57,7 +67,7 @@
         width: 50%;
       }
 
-      .buyer  {
+      .buyer {
         max-width: 30%;
       }
 
@@ -69,7 +79,8 @@
         overflow: auto;
       }
 
-      .brand span, .brand img {
+      .brand span,
+      .brand img {
         float: left;
       }
 
@@ -99,9 +110,11 @@
         font-size: 30pt;
         border: 5px solid #78E400;
         padding: 1pt 5pt;
-        transform:        rotate(-15deg);
-        -ms-transform:    rotate(-15deg); /* IE 9 */
-        -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+        transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-15deg);
+        /* Safari and Chrome */
       }
 
       .buyer {
@@ -116,9 +129,11 @@
         font-size: 11pt;
       }
 
-      .buyer span { display: block; }
-
+      .buyer span {
+        display: block;
+      }
       /* main */
+
       table {
         width: 100%;
       }
@@ -132,7 +147,8 @@
         border-bottom: 1px solid #D6D6D6;
       }
 
-      th:last-child, td:last-child {
+      th:last-child,
+      td:last-child {
         width: 20%;
       }
 
@@ -162,7 +178,7 @@
         text-align: right;
       }
 
-      tr:nth-child(odd) td{
+      tr:nth-child(odd) td {
         background: #F1F1F1;
       }
 
@@ -176,7 +192,7 @@
         float: left;
       }
 
-      #totals{
+      #totals {
         padding: 3mm;
         float: right;
         text-align: right;
@@ -184,8 +200,8 @@
         color: #7E7E7E;
         line-height: 16pt;
       }
-
       /* footer */
+
       footer {
         text-align: center;
       }
@@ -200,9 +216,12 @@
         margin-top: 2mm;
       }
 
-      .clearfix{ clear: both; }
+      .clearfix {
+        clear: both;
+      }
     </style>
   </head>
+
   <body>
     <div id="container">
 
@@ -222,8 +241,8 @@
         <div class="buyer">
           <h2>Billed To</h2>
           <%= client.name %>
-          <span class="email">superbestclient@example.com</span>
-          <span class="date">January 20, 2014</span>
+            <span class="email">superbestclient@example.com</span>
+            <span class="date">January 20, 2014</span>
         </div>
         <div class="clearfix"></div>
       </header>
@@ -263,8 +282,12 @@
       </div>
 
       <footer>
-        <img alt="Expected Behavior Logo" height="34" src="https://docraptor.com/assets/expected-behavior-logo.svg" width="150" />
+        <img alt="Expected Behavior Logo"
+          height="34"
+          src="https://docraptor.com/assets/expected-behavior-logo.svg"
+          width="150" />
         <p>DocRaptor is made and supported by Expected Behavior, LLC<br>1-866-991-3746 | 2885 Sanford Ave SW #13508, Grandville, MI 49418-1342 | support@docraptor.com</p>
       </footer>
   </body>
+
 </html>

@@ -24,7 +24,10 @@
     "html-pdf": "^2.1.0",
     "inquirer": "^1.2.3",
     "moment": "^2.17.0",
+    "multiparty": "^4.1.2",
     "nodemon": "^1.11.0",
+    "pdf2json": "^1.1.7",
+    "pdftohtmljs": "^0.4.1",
     "redis": "^2.6.3",
     "uuid": "^3.0.1"
   }
